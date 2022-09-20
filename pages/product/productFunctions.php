@@ -4,7 +4,8 @@ function loadProducts()
 {
     // $jsonobj =  file_get_contents("https://www.clavicar.com/campusweekly/api/inv/api/9r0DUctS/lIStaIIpr0dnctz.php");
     // $jsonobj =  file_get_contents("https://api.campusweekly.info/inventorySystem/api/products/listAllProducts.php");
-    $jsonobj =  file_get_contents("http://localhost/api_TotcoOffline/api/product/listAllProducts.php");
+    // https://totco.kakebe.com/api/api/sales_orders/createSalesOrder.php
+    $jsonobj =  file_get_contents("https://totco.kakebe.com/api/api/product/listAllProducts.php");
 
     $PHPpdtsObj = json_decode($jsonobj);
 

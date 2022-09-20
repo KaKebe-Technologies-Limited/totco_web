@@ -76,7 +76,7 @@ if (isset($_POST['add_user_submit'])) {
         $passwordConfirm = urlencode($_POST['passwordConfirm']);
         $_POST = array();
 
-        $jsonobj =  file_get_contents("http://localhost/api_TotcoOffline/api/users/createUser.php?first_name=$firstName&last_name=$lastName&user_name=$user_name&password=$password&passwordConfirm=$passwordConfirm");
+        $jsonobj =  file_get_contents("https://totco.kakebe.com/api/api/users/createUser.php?first_name=$firstName&last_name=$lastName&user_name=$user_name&password=$password&passwordConfirm=$passwordConfirm");
 
         $PHPobj = json_decode($jsonobj);
 

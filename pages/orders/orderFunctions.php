@@ -3,7 +3,7 @@
 function loadProducts()
 {
     // $jsonobj =  file_get_contents("http://localhost/api_TotcoOffline/api/product/listAllProducts.php");
-    $jsonobj =  file_get_contents("http://localhost/api_TotcoOffline/api/sales_orders/listAllSalesOrders.php");
+    $jsonobj =  file_get_contents("https://totco.kakebe.com/api/api/sales_orders/listAllSalesOrders.php");
 
     $PHPsalesObj = json_decode($jsonobj);
 
